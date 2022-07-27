@@ -7,8 +7,10 @@
 )
 - [Understanding Lambda expressions and delegates](https://stackoverflow.com/questions/3282103/understanding-lambda-expressions-and-delegates)
 - [Anonymous function](https://en.wikipedia.org/wiki/Anonymous_function)
+- [AboutInnerClassesDisadvantage](https://www.infoworld.com/article/2077411/inner-classes.html)
+- [가변 관찰할 가능성(no potential for variable shadowing)](https://javahungry.blogspot.com/2020/02/variable-shadowing-and-variable-hiding.html)
 ---
-### Search
+### Search 💻
 람다식의 도입으로 인해 자바는 객체지향 언어인 동시에 함수형 언어가 되었다고 한다. 함수형 언어의 장점들을 자바에서도 누릴 수 있게 되었으니 람다식이라는 강력한 무기에 대해 알아보자
 
 >
@@ -22,15 +24,18 @@
   - 병렬 처리 지원
     - 람다식은 오늘날 모든 프로세서가 [멀티 코어 프로세서](https://www.techtarget.com/searchdatacenter/definition/multi-core-processor)라고 한다. 
     따라서 병렬 처리를 지원한다.
+- [람다식을 사용함으로써 얻는 장점은 무엇인가요?](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/Benefits-of-lambda-expressions-in-Java-makes-the-move-to-a-newer-JDK-worthwhile):
+  - 간결하고 읽기 쉬운 코드.
+그리고 람다 표현식으로 [가변 관찰할 가능성(no potential for variable shadowing)](https://javahungry.blogspot.com/2020/02/variable-shadowing-and-variable-hiding.html)이 없으며, 내부 클래스를 사용할 때 큰 단점(클래스 증가)을 제거한다.
+  - 객체지향이 유연한 변경을 얻는 대신 객체 중첩이라는 단점을 감수했었는데, 그 단점을 제거했다고 이해함, [참조](https://www.infoworld.com/article/2077411/inner-classes.html)
 - [람다식의 목적은 무엇인가요?](https://www.techopedia.com/definition/3826/lambda-expression) 
   - 익명 메서드 작성에 사용
   - 간결하고 기능적인 구문을 제공
   - 함수형 프로그래밍 개념을 기반으로 하며 
-- [람다식의 장점은 무엇인가요?]
 - [람다식 사용 시 주의점]
   - 람다 표현식은 컴파일러의 약어를 제공하여 [대리자(delegates)](https://stackoverflow.com/questions/3282103/understanding-lambda-expressions-and-delegates)에게 할당된 메서드를 방출할 수 있도록 한다.
   - 컴파일러는 람다 인자에 대한 자동 유형 추론을 수행하며, 이는 주요 이점이다.
-  
+---
 ### 람다식이란?
 "메서드를 하나의 식(expression)으로 표현한 것"이라고 간단히 말할 수 있다. 그렇다면 그렇게 함으로써 해결되는 문제는 무엇일까?
 - 메서드의 이름과 반환값이 없어지므로 람다식을 익명 함수(anonymous function)라고도 한다.
